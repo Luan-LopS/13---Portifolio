@@ -7,17 +7,18 @@ body{
 
 #top-bar{
     width: 100%;
-    height: 3rem;
+    height: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color:#1E293B;
+    font-size: 1.7rem;
 }
 
 
 #nave ul{
-    width: 24rem;
+    width: 30rem;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -30,3 +31,24 @@ a{
     color: #BBBBBB;
 }
 
+#header{
+    height: 60vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#apresentacao{
+    height: 60vh;
+    width: 50vw;
+    float: left;
+    text-align: center;
+}
+
+#imag{
+    height: 60vh;
+    width: 50vw;
+    float: right;
+    background-image: url("/imagens/Developer\ activity-bro.svg");
+    background-position:left;
+    background-repeat: no-repeat;
+}
