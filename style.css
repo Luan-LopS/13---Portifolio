@@ -9,9 +9,10 @@ body{
 #top-bar{
     width: 100vw;
     height: 4rem;
-    background-color:#1E293B;
+    background-color:#767779;
     display: flex;
     justify-content: center;
+    position: fixed;
     
 }
 
@@ -25,21 +26,20 @@ body{
 }
 
 #nave {
-    
+    width: 35rem;
+    float: right;
 }
 
 
 ul{
-    width: 35rem;
     display: flex;
     justify-content: space-around;
     list-style: none;
-    float: right;
 }
 
 #logo{
-    width: 50px;
-    float: left;
+
+    
 }
 
 a{
@@ -47,7 +47,15 @@ a{
     color: #BBBBBB;
 }
 
-#content{
-    background-color: aliceblue;
+#conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+
+.card{
+    height: 95vh;
+    width: 80vw;
+    background-color: aquamarine;
 }
