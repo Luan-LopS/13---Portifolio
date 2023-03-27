@@ -1,61 +1,214 @@
 
 body{
     margin: 0;
-    padding: 0;
-    background-color:#111827;
-
+    padding-top: 4em;   
+    background-color: #222222;
+    color: #FFFFFF;
 }
 
 #top-bar{
-    width: 100vw;
-    height: 4rem;
-    background-color:#767779;
-    display: flex;
-    justify-content: center;
     position: fixed;
-    
+    width: 100vw;
+    height: 4em;
+    top: 0; left: 0;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .content-header{
-    width: 90vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.7rem;
+    font-size: 1.7em;
+    background-color: #222222;
+
+
 }
 
 #nave {
-    width: 35rem;
+    width: 25em;
     float: right;
 }
 
 
-ul{
+#nave ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style: none;
 }
 
 #logo{
+    width: 5rem;
+    font-size: 48px;
+    font-weight: 1000;
+    box-sizing: border-box;
+}
 
+#p1{
+    margin-top: 10px;
+    width: 1.2rem;
+    height: 1.5rem;
+    border: 0.6rem solid #fff;
+    border-left: 0;
+    border-top: 0;
+    float: left;
+    transform: rotate(115deg);
+    margin-left: 1.4rem;
+}
+
+#p2{
+    width: 1rem;
+    height: 0.5rem;
+    background-color: #fff;
+    margin: 0 0 .7rem 3.3rem;
+    transform: rotate(-53deg);
     
+}
+
+#p3{
+    
+    margin-top: -12px;
+    width: 1.2rem;
+    height: 1.5rem;
+    border: 0.6rem solid #fff;
+    float: right;
+    border-left: 0;
+    border-top: 0;
+    transform: rotate(-55deg);
+}
+
+span{
+    font-size: 1.5em;
 }
 
 a{
     text-decoration: none;
-    color: #BBBBBB;
+    color: #FFFFFF;
+}
+
+h1{
+    font-size: 3em;
+    padding-bottom:0;
+    margin-bottom: 0.2em;
 }
 
 #conteiner{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
+}
+
+.card{
+    margin-top: 2em;
+    height: 100vh;
+    width: 90vw;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#header-apre{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#apres{
+    margin: 2em;
+    height: 15em;
+    width: 35em;
+    align-items: center;
+}
+
+#imag{
+    height: 40vh;
+    width: 22vw;
+    background-image: url(/imagens/galaxia.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    border: #333333 0.8rem solid;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 
-.card{
-    height: 95vh;
-    width: 80vw;
-    background-color: aquamarine;
+#sobre{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+#sobre p {
+    padding-top:0.8em;
+    width: 70%;
+    text-align: justify;
+}
+
+
+#foto{
+    height: 15rem;
+    width: 15rem;
+    background-color: antiquewhite;
+    border-radius: 100%;
+    border: #333333 0.8rem solid;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+#projeto{
+    grid-template-columns: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: bisque;
+    height: 4em;
+    width: 100%;
+
 }
