@@ -1,21 +1,21 @@
-
-body{
+body {
     margin: 0;
-    padding-top: 4em;   
+    padding-top: 4em;
     background-color: #222222;
     color: #FFFFFF;
 }
 
-#top-bar{
+#top-bar {
     position: fixed;
     width: 100vw;
     height: 4em;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     z-index: 2;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.content-header{
+.content-header {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -33,20 +33,20 @@ body{
 }
 
 
-#nave ul{
+#nave ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
 }
 
-#logo{
+#logo {
     width: 5rem;
     font-size: 48px;
     font-weight: 1000;
     box-sizing: border-box;
 }
 
-#p1{
+#p1 {
     margin-top: 10px;
     width: 1.2rem;
     height: 1.5rem;
@@ -58,17 +58,17 @@ body{
     margin-left: 1.4rem;
 }
 
-#p2{
+#p2 {
     width: 1rem;
     height: 0.5rem;
     background-color: #fff;
     margin: 0 0 .7rem 3.3rem;
     transform: rotate(-53deg);
-    
+
 }
 
-#p3{
-    
+#p3 {
+
     margin-top: -12px;
     width: 1.2rem;
     height: 1.5rem;
@@ -79,29 +79,29 @@ body{
     transform: rotate(-55deg);
 }
 
-span{
+span {
     font-size: 1.5em;
 }
 
-a{
+a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-h1{
+h1 {
     font-size: 3em;
-    padding-bottom:0;
+    padding-bottom: 0;
     margin-bottom: 0.2em;
 }
 
-#conteiner{
+#conteiner {
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
 }
 
-.card{
+.card {
     margin-top: 2em;
     height: 100vh;
     width: 90vw;
@@ -109,7 +109,7 @@ h1{
     box-sizing: border-box;
 }
 
-#header-apre{
+#header-apre {
     height: 80vh;
     display: flex;
     flex-direction: row;
@@ -117,14 +117,14 @@ h1{
     align-items: center;
 }
 
-#apres{
+#apres {
     margin: 2em;
     height: 15em;
     width: 35em;
     align-items: center;
 }
 
-#imag{
+#imag {
     height: 40vh;
     width: 22vw;
     background-image: url(/imagens/galaxia.jpg);
@@ -137,7 +137,7 @@ h1{
 }
 
 
-#sobre{
+#sobre {
     height: 100%;
     width: 100%;
     display: flex;
@@ -149,13 +149,13 @@ h1{
 }
 
 #sobre p {
-    padding-top:0.8em;
+    padding-top: 0.8em;
     width: 70%;
     text-align: justify;
 }
 
 
-#foto{
+#foto {
     height: 15rem;
     width: 15rem;
     background-color: antiquewhite;
@@ -165,31 +165,133 @@ h1{
 }
 
 
-#projeto{
+#projeto {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.projetos{
+.projetos {
     height: 60%;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 60% 60%;
 }
 
-.project-cards{
+.project-cards {
     margin: 1em;
-    background-color: aqua;
 }
 
-.project-cards:hover{
+.project-cards:hover {
     width: 100%;
-    height: 150%;
+    height: 100%;
     font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+#habili {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+
+.conteiner-carrossel {
+    position: relative;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+}
+
+.content-carrossel {
+    position: relative;
+    display: flex;
+    height: 25em;
+    width: 50em;
+    overflow: visible;
+    margin: 0 auto;
+    
+}
+
+.content-carrossel .fa-brands {
+    position: relative;
+    margin-right: 0.2em;
+    height: 100%;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+.fa-brands{
+    right: 0;
+font-size: 20em;
+    flex: none;
+
+}
+
+
+.btnCarossel {
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
 }
 
+.btnCarossel:hover {
+    background: rgba(20, 20, 20, .65);  
+}
+
+#seta {
+    box-shadow: 2px -2px 0 1px #fff inset;
+    transition: box-shadow 100ms;
+}
+
+
+.BtnBack {
+    left: 0;
+   
+}
+
+#seta {
+    position: absolute;
+    padding: 17%;
+    box-shadow: 2px -2px 0 -1px #fff inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: box-shadow 100ms;
+    transform: rotate(45deg);
+}
+
+.BtnNext {
+    right: 0;
+}
+
+#seta {
+    position: absolute;
+    padding: 17%;
+    box-shadow: 2px -2px 0 -1px #fff inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: box-shadow 100ms;
+    transform: rotate(225deg);
+}
 
 
 
@@ -199,33 +301,35 @@ h1{
 
 
 
+.fa-brands p {
+    font-size: 1.2rem;
+    margin: 0;
+
+}
+
+.content-carrossel .fa-brands:hover {
+    font-size: 15rem;
+}
+
+.fa-html5:hover {
+    color: #E44D26;
+}
+
+.fa-css3-alt:hover {
+    color: #214CE5;
+}
+
+
+.fa-square-js:hover {
+    color: #F8DC3E;
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer{
+.footer {
     background-color: bisque;
     height: 4em;
     width: 100%;
