@@ -102,9 +102,8 @@ h1 {
 }
 
 .card {
-    margin-top: 2em;
     height: 100vh;
-    width: 90vw;
+    width: 97%;
     text-align: center;
     box-sizing: border-box;
 }
@@ -157,11 +156,13 @@ h1 {
 
 #foto {
     background-image: url(/imagens/1.png);
+    background-position: center;
+    background-size: 200%;
     height: 15rem;
     width: 15rem;
     border-radius: 100%;
     border: #333333 0.8rem solid;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
 }
 
 
@@ -169,6 +170,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 3em;
 }
 
 .projetos {
@@ -176,20 +178,57 @@ h1 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 60% 60%;
+    
 }
 
 .project-cards {
-    margin: 1em;
+    width: 90%;
+    height: 80%;
+    margin: 0.2em;
+    border-radius: 2em;
+    opacity: 0.2;
+    display: flex;
+    color: #FFFFFF;
+    border: #333333 0.8rem solid;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .project-cards:hover {
-    width: 100%;
-    height: 100%;
-    font-size: 1em;
+
+    font-size: 2em;
     cursor: pointer;
     text-align: center;
+    opacity: 0.8;
 
 }
+
+.project-cards h3 p:hover {
+    z-index: 2;
+    color: #fff;
+   
+}
+
+
+.card1{
+    background-image: url(/imagens/cod-python.jpg);
+    background-size: cover;
+}
+
+.card2{
+    background-image: url(/imagens/cod-python.jpg);
+    background-size: cover;
+}
+
+.card3{
+    background-image: url(/imagens/cod-python.jpg);
+    background-size: cover;
+}
+
+.card4{
+    background-image: url(/imagens/cod-python.jpg);
+    background-size: cover;
+}
+
 
 #habili {
     display: flex;
@@ -200,112 +239,52 @@ h1 {
 
 }
 
-
-
-
-
-
-.conteiner-carrossel {
-    position: relative;
-    width: 90%;
-    height: auto;
+.conteiner-carrossel{
+    width: 50em;
+    height: 20em;
+    box-sizing: border-box;
     overflow: hidden;
 }
 
-.content-carrossel {
-    position: relative;
+.content-carrossel{
+    width: 200em;
+    height: 20em;
     display: flex;
-    height: 25em;
-    width: 50em;
-    overflow: visible;
-    margin: 0 auto;
-    
+    align-items: center;
+
 }
 
-.content-carrossel .fa-brands {
-    position: relative;
-    margin-right: 0.2em;
+.slide{
+    width: 16.6em;
     height: 100%;
-    width: 100%;
-    box-sizing: content-box;
+    margin-left: 0.3em;
+    position: relative;
+    box-sizing: border-box;
+    animation: slide 30s infinite ease-in;
+}
+
+@keyframes slide{
+    0%{left: 0em;}
+    10%{left:0em;}
+    25%{left: -50em;}
+    35%{left: -50em;}
+    44%{left: -100em;}
+    55%{left: -100em;}
+    65%{left: -118em;}
+    100%{left: 0;}
 }
 
 .fa-brands{
-    right: 0;
-font-size: 20em;
-    flex: none;
-
+    font-size: 15em;
 }
-
-
-.btnCarossel {
-    width: 5%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.btnCarossel:hover {
-    background: rgba(20, 20, 20, .65);  
-}
-
-#seta {
-    box-shadow: 2px -2px 0 1px #fff inset;
-    transition: box-shadow 100ms;
-}
-
-
-.BtnBack {
-    left: 0;
-   
-}
-
-#seta {
-    position: absolute;
-    padding: 17%;
-    box-shadow: 2px -2px 0 -1px #fff inset;
-    border: solid transparent;
-    border-width: 0 0 2px 2px;
-    margin: 0 auto;
-    opacity: 0;
-    transition: box-shadow 100ms;
-    transform: rotate(45deg);
-}
-
-.BtnNext {
-    right: 0;
-}
-
-#seta {
-    position: absolute;
-    padding: 17%;
-    box-shadow: 2px -2px 0 -1px #fff inset;
-    border: solid transparent;
-    border-width: 0 0 2px 2px;
-    margin: 0 auto;
-    opacity: 0;
-    transition: box-shadow 100ms;
-    transform: rotate(225deg);
-}
-
-
-
-
-
-
-
-
 
 .fa-brands p {
     font-size: 1.2rem;
     margin: 0;
-
 }
+
+
+
 
 .content-carrossel .fa-brands:hover {
     font-size: 15rem;
@@ -324,14 +303,40 @@ font-size: 20em;
     color: #F8DC3E;
 }
 
+.fa-bootstrap:hover{
+    color: #8312FA;
+}
+
+.fa-node:hover{
+    color:#3E863D;
+}
+
+.fa-github:hover{
+    color: #9D1BF2;
+}
+
+.fa-git:hover{
+    color:#F05030;
+}
+
+.fa-figma:hover{
+    color: #1FBD79;
+}
+
+.fa-python:hover{
+    color:#1F5461;
+}
+
+.fa-java:hover{
+    color:#0C83BD;
+}
 
 
 
 
 
 .footer {
-    background-color: bisque;
     height: 4em;
     width: 100%;
-
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
