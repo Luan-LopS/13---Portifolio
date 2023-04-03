@@ -3,6 +3,8 @@ body {
     padding-top: 4em;
     background-color: #222222;
     color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 #top-bar {
@@ -30,6 +32,7 @@ body {
 #nave {
     width: 25em;
     float: right;
+    font-weight: 700;
 }
 
 
@@ -44,6 +47,7 @@ body {
     font-size: 48px;
     font-weight: 1000;
     box-sizing: border-box;
+    font-size: 0.5em;
 }
 
 #p1 {
@@ -143,12 +147,12 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-weight: 600;
-    font-size: 1.25em;
+    font-weight: 400;
+    font-size: 1.1em;
 }
 
 #sobre p {
-    padding-top: 0.8em;
+    padding-top: 0.5em;
     width: 70%;
     text-align: justify;
 }
@@ -170,7 +174,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 3em;
+    margin-left: 2.1em;
 }
 
 .projetos {
@@ -194,7 +198,6 @@ h1 {
 }
 
 .project-cards:hover {
-
     font-size: 2em;
     cursor: pointer;
     text-align: center;
@@ -240,6 +243,7 @@ h1 {
 }
 
 .conteiner-carrossel{
+    margin-top: 3em;
     width: 50em;
     height: 20em;
     box-sizing: border-box;
@@ -275,7 +279,7 @@ h1 {
 }
 
 .fa-brands{
-    font-size: 15em;
+    font-size: 12em;
 }
 
 .fa-brands p {
@@ -331,12 +335,45 @@ h1 {
     color:#0C83BD;
 }
 
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.content_list ul{
+    width: 50em;
+    height: 5em;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_list li{
+    width: 4em;
+    height: 4em;
+    padding-top: .4em;
+}
 
 
 
+.content_list li i{
+    font-size: 3em;
+}
+
+.content_list li:hover{
+    border: solid #646464;
+    border-radius: 10%;
+    cursor: pointer;
+}
+  
 
 .footer {
     height: 4em;
     width: 100%;
+    text-align: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
