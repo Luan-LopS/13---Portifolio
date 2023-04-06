@@ -19,11 +19,7 @@
         <div class="content-header">
             <div id="logo">
                 <a href="">
-                    <div id="p1"></div>
-
-                    <div id="p2"></div>
-
-                    <div id="p3"></div>
+                    <i class="fa-solid fa-code"></i>
                 </a>
             </div>
             <nav id="nave">
@@ -41,10 +37,12 @@
     <main id="conteiner">
         <article class="content">
             <header id="header-apre" class="card">
-                <div id="imag"></div>
+                <div id="imag">
+                    <i id="play" class="fa-regular fa-circle-play"></i>
+                </div>
                 <div id="apres">
-                    <h3>Analista e Desenvolvedor de Sistemas <span> Luan LopS !</span> </h3>
-                    <h2>Seja bem vindo ao meu portifolio</h2>
+                    <h2>Seja bem vindo ao meu portifolio!</h2>
+                    <p>Aqui você encontrará exemplos de projetos que desenvolvi aolongo da minha caminhada com muito cuidado e atenção aos detalhes, Aqui você encontrará exemplos de projetos que desenvolvi com muita criatividade e paixão. Buscando oferecer a melhor experiência possível para o usuário. Espero que você possa explorar os trabalhos e se inspirar com as soluções criativas que apresento."</p>
                 </div>
             </header>
 
@@ -63,44 +61,171 @@
                     </p>
                 </div>
             </div>
-            <section id="projeto" class="card">
+            <section id="projeto" class="card conteiner-project">
                 <h1>Projetos</h1>
-                <div class="projetos">
-                    <div class="project-cards card1">
-                        <h3>
-                            Gerenciador Academico
-                        </h3>
-                        <p>
-                            Projeto Realizado com Python
-                        </p>
+                <nav id="nav-project">
+                    <ul>
+                        <li onclick="displayHtml()">
+                            <h2>HTML</h2>
+                        </li>
+                        <li onclick="displayCss()">
+                            <h2>CSS</h2>
+                        </li>
+                        <li onclick="displayJavascript()">
+                            <h2>JavaScript</h2>
+                        </li>
+                        <li onclick="displayPython()">
+                            <h2>Python</h2>
+                        </li>
+                        <li onclick="displayJava()">
+                            <h2>Java</h2>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div id="projectHtml">
+                    <h2>HTML</h2>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="img-item">
+                            </div>
+                            <h5>Currilo</h5>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis libero ab alias
+                                repellendus hic iure consectetur vel maiores culpa mollitia, eum error expedita quas
+                                esse dolor est nisi rerum commodi?
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-item">
+                            </div>
+                            <h5>Currilo</h5>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis libero ab alias
+                                repellendus hic iure consectetur vel maiores culpa mollitia, eum error expedita quas
+                                esse dolor est nisi rerum commodi?
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-item">
+                            </div>
+                            <h5>Currilo</h5>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis libero ab alias
+                                repellendus hic iure consectetur vel maiores culpa mollitia, eum error expedita quas
+                                esse dolor est nisi rerum commodi?
+                            </p>
+                        </div>
+
+
                     </div>
-                    <div class="project-cards card2">
-                        <h3>
-                            Jogo da Chadrez
-                        </h3>
-                        <p>
-                            Jogo desenvolvido com Java
-                        </p>
+                </div>
+                <div id="projectCss">
+                    <h2>Css</h2>
+                    <div class="grid-container">
+                        <div class="grid-item css01">
+                            <div class="img-item">
+                            </div>
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </div>
+                        <div class="grid-item css02">
+                            <div class="img-item">
+                            </div>
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </div>
+                        <div class="grid-item css03">
+                            <div class="img-item">
+                            </div>
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </div>
                     </div>
-                    <div class="project-cards card3">
-                        <h3>
-
-                        </h3>
-                        <p>
-
-                        </p>
+                </div>
+                <div id="projectJavascript">
+                    <h2>JavaScript</h2>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="img-item">
+                            </div>
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-item">
+                            </div>
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-item">
+                            </div>
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </div>
                     </div>
-                    <div class="project-cards card4">
-                        <h3>
-
-                        </h3>
-                        <p>
-
-                        </p>
+                </div>
+                <div id="projectPython">
+                    <h2>Python</h2>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="img-item">
+                            </div>
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-item">
+                            </div>
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-item">
+                            </div>
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
+                <div id="projectJava">
+                    <h2>Java</h2>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="img-item">
+                            </div>
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-item">
+                            </div>
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="img-item">
+                            </div>
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </div>
 
+                    </div>
+                </div>
             </section>
 
             <figure id="habili" class="card">
@@ -109,9 +234,9 @@
                 <p>
 
                 </p>
-                <div class="conteiner-carrossel"> 
+                <div class="conteiner-carrossel">
                     <div class="content-carrossel">
-                        <div class="i01 slide"> 
+                        <div class="i01 slide">
                             <i class="fa-brands fa-html5">
                                 <p>HTML 5</p>
                             </i>
@@ -160,25 +285,48 @@
                             <i class="fa-brands fa-java">
                                 <p>Java</p>
                             </i>
-                        </div>                     
-                    </div>             
+                        </div>
+                    </div>
                 </div>
             </figure>
 
             <section id="contact" class="card">
                 <h1>Contato</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum numquam nesciunt consequuntur. Animi laudantium ipsa nulla amet. Veniam, dolore perferendis?</p>
-                <div class="content_list">
-                    <ul>
-                        <li><i class="fa-brands fa-whatsapp"></i></li>
-                        <li><i class="fa-brands fa-linkedin"></i></li>
-                        <li><i class="fa-regular fa-envelope"></i></li>
-                    </ul>
+                <p class="conteudo">
+                    Se você tem uma ideia inovadora e está em busca de um desenvolvedor que possa ajudá-lo a
+                    concretizá-la, você veio ao lugar certo. Vamos trabalhar juntos para criar algo único e impactante.
+                </p>
+                <div class="contact-card">
+                    <a href="https://www.linkedin.com/in/luanls/" target="_blank">
+                        <div class="contact-cards">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <p>
+                                Entre em contato e me sigua:
+                            </p>
+                            www.linkedin.com/in/luanls/
+                        </div>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5541998184071" target="_blank">
+                        <div class="contact-cards">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <p>
+                                Entre em contato:
+                            </p>
+                            (41)99818-4071
+                        </div>
+                    </a>
+                    <a href="mailto:luam10@hotmail.com.br" target="_blank">
+                        <div class="contact-cards">
+                            <i class="fa-sharp fa-regular fa-envelope"></i>
+                            <P>
+                                Entre em contato:
+                            </P>
+                            luam@hotmail.com.br
+
+                        </div>
+                    </a>
                 </div>
-
             </section>
-
-
         </article>
     </main>
 

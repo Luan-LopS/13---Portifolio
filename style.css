@@ -1,3 +1,7 @@
+
+/*---------------inicio configuração geral------------*/
+
+
 body {
     margin: 0;
     padding-top: 4em;
@@ -5,82 +9,6 @@ body {
     color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
-}
-
-#top-bar {
-    position: fixed;
-    width: 100vw;
-    height: 4em;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.content-header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.7em;
-    background-color: #222222;
-
-
-}
-
-#nave {
-    width: 25em;
-    float: right;
-    font-weight: 700;
-}
-
-
-#nave ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-}
-
-#logo {
-    width: 5rem;
-    font-size: 48px;
-    font-weight: 1000;
-    box-sizing: border-box;
-    font-size: 0.5em;
-}
-
-#p1 {
-    margin-top: 10px;
-    width: 1.2rem;
-    height: 1.5rem;
-    border: 0.6rem solid #fff;
-    border-left: 0;
-    border-top: 0;
-    float: left;
-    transform: rotate(115deg);
-    margin-left: 1.4rem;
-}
-
-#p2 {
-    width: 1rem;
-    height: 0.5rem;
-    background-color: #fff;
-    margin: 0 0 .7rem 3.3rem;
-    transform: rotate(-53deg);
-
-}
-
-#p3 {
-
-    margin-top: -12px;
-    width: 1.2rem;
-    height: 1.5rem;
-    border: 0.6rem solid #fff;
-    float: right;
-    border-left: 0;
-    border-top: 0;
-    transform: rotate(-55deg);
 }
 
 span {
@@ -93,9 +21,60 @@ a {
 }
 
 h1 {
-    font-size: 3em;
-    padding-bottom: 0;
+    font-size: 2em;
     margin-bottom: 0.2em;
+    text-transform: uppercase;
+}
+
+.card {
+    height: 90vh;
+    width: 97%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/*---------------Fim configuração geral------------*/
+
+/*--------------inicio header-----------------*/
+
+#top-bar {
+    position: fixed;
+    width: 100vw;
+    height: 4em;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.content-header {
+    width: 93%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222222;
+}
+
+#nave {
+    width: 40%;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+#nave ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#logo {
+    position: relative;
+    left: .8em;
+    font-size: 3em;
+    font-weight: 1000;
 }
 
 #conteiner {
@@ -105,12 +84,9 @@ h1 {
     z-index: 1;
 }
 
-.card {
-    height: 100vh;
-    width: 97%;
-    text-align: center;
-    box-sizing: border-box;
-}
+/*---------------Fim header------------*/
+
+/*--------------inicio apresentação-----------------*/
 
 #header-apre {
     height: 80vh;
@@ -124,7 +100,14 @@ h1 {
     margin: 2em;
     height: 15em;
     width: 35em;
-    align-items: center;
+}
+
+#apres h2 {
+    text-align: left;
+}
+
+#apres p{
+    text-align: left;
 }
 
 #imag {
@@ -139,9 +122,27 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+#play {
+    height: 40vh;
+    width: 22vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#imag:hover #play{
+    display: flex;
+    font-size: 4em;
+    opacity: 0.7;
+}
+
+/*---------------Fim apresentação ------------*/
+
+/*--------------inicio sobre-----------------*/
 
 #sobre {
-    height: 100%;
+    height: 105%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -169,77 +170,146 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
 }
 
+/*---------------Fim sobre ------------*/
 
-#projeto {
+/*--------------inicio projetos pessoais-----------------*/
+
+.conteiner-project {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 2.1em;
+    align-items: center;
 }
 
-.projetos {
-    height: 60%;
+#nav-project{
+    width: 80%;
+}
+
+.conteiner-project ul{
+    padding: 0;
+    height: 5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteiner-project li{
+    list-style: none;
+    width: 8.5em;
+    height: 4.5em;
+    background-color: #1F5461;
+    border-radius: 5%;
+
+}
+
+.conteiner-project li:hover{
+    background-color: #1F5461;
+    border: .2em solid black;
+    cursor: pointer;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 24px 25px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+}
+
+.grid-container {
+    width: 100%;
+    height: 90%;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 60% 60%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100%;
+    grid-gap: .8em;
+    justify-content: space-between;
+    box-sizing: border-box;
+    justify-items: center;
+
+}
+  
+.grid-item {
+    width: 78%;
+    height: 96%;
+    background-color: #333333;
+    font-size: 30px;
+    border: 0.1em solid black;
+    padding: 0.2em;
+    border-radius: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 24px 25px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+}
+
+#projectHtml{
+    display: none;
+    width: 80%;
+    height: 60%;
     
 }
 
-.project-cards {
-    width: 90%;
-    height: 80%;
-    margin: 0.2em;
-    border-radius: 2em;
-    opacity: 0.2;
-    display: flex;
-    color: #FFFFFF;
-    border: #333333 0.8rem solid;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+#projectCss{
+    display: none;
+    width: 80%;
+    height: 60%;
 }
 
-.project-cards:hover {
-    font-size: 2em;
-    cursor: pointer;
-    text-align: center;
-    opacity: 0.8;
-
+#projectJavascript{
+    display: none;
+    width: 80%;
+    height: 60%;
 }
 
-.project-cards h3 p:hover {
-    z-index: 2;
-    color: #fff;
-   
+#projectPython{
+    display: none;
+    width: 80%;
+    height: 60%;
+}
+
+#projectJava{
+    display: none;
+    width: 80%;
+    height: 60%;
 }
 
 
-.card1{
+
+.img-item {
     background-image: url(/imagens/cod-python.jpg);
     background-size: cover;
+    height: 50%;
+    width: 100%;
+    border-radius: 0.4em;
+    opacity: 0.7;
 }
 
-.card2{
-    background-image: url(/imagens/cod-python.jpg);
-    background-size: cover;
-}
-
-.card3{
-    background-image: url(/imagens/cod-python.jpg);
-    background-size: cover;
-}
-
-.card4{
-    background-image: url(/imagens/cod-python.jpg);
-    background-size: cover;
+.grid-item h5{
+    margin: 0;
+    padding: 0;
+    font-size: 0.5em;
 }
 
 
+.grid-item p{
+    margin-top: 0.5em;
+    height: 50%;
+    width: 98%;
+    text-align: justify;
+    font-size: 0.4em;
+
+}
+
+
+
+
+
+
+
+/*---------------Fim dos projetos pessoais------------*/
+
+/*--------------inicio Conhecimentos Tecnicos (habilidades)-----------------*/
 #habili {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-
 }
 
 .conteiner-carrossel{
@@ -255,7 +325,6 @@ h1 {
     height: 20em;
     display: flex;
     align-items: center;
-
 }
 
 .slide{
@@ -264,18 +333,18 @@ h1 {
     margin-left: 0.3em;
     position: relative;
     box-sizing: border-box;
-    animation: slide 30s infinite ease-in;
+    animation: slide 30s infinite linear;
 }
 
 @keyframes slide{
-    0%{left: 0em;}
-    10%{left:0em;}
-    25%{left: -50em;}
-    35%{left: -50em;}
-    44%{left: -100em;}
-    55%{left: -100em;}
-    65%{left: -118em;}
-    100%{left: 0;}
+    15%{left:0em;}
+    30%{left: -50em;}
+    45%{left: -50em;}
+    65%{left: -100em;}
+    75%{left: -100em;}
+    85%{left: -118em;}
+    99%{left: -118em;}
+    100%{left: 0em;}
 }
 
 .fa-brands{
@@ -286,9 +355,6 @@ h1 {
     font-size: 1.2rem;
     margin: 0;
 }
-
-
-
 
 .content-carrossel .fa-brands:hover {
     font-size: 15rem;
@@ -334,43 +400,48 @@ h1 {
 .fa-java:hover{
     color:#0C83BD;
 }
+/*------------FIM Conhecimentos Tecnicos (habilidades)------------------*/
 
+
+/*---------------------Inico contatos-----------------------*/
 #contact{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
+    justify-content: center;
 }
 
+.conteudo{
+    width: 80%;
+    margin: 2em;
+}
 
-.content_list ul{
-    width: 50em;
-    height: 5em;
-    list-style: none;
+.contact-card{
     display: flex;
     justify-content: space-between;
+    width: 80%;
+    height: 20em;
 }
 
-.content_list li{
-    width: 4em;
-    height: 4em;
-    padding-top: .4em;
+.contact-cards{
+    padding-top: 1.5em;
+    width: 15em;
+    height: 12em;
+    margin: 1em;
+    border-radius: 5%;
 }
 
-
-
-.content_list li i{
-    font-size: 3em;
+.contact-cards:hover{
+    border: solid 0.2em black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.content_list li:hover{
-    border: solid #646464;
-    border-radius: 10%;
-    cursor: pointer;
+.contact-cards i {
+    font-size: 4em;
 }
-  
+/*---------------------Fim contatos-----------------------*/
 
+/*---------------------Inicio footer-----------------*/
 .footer {
     height: 4em;
     width: 100%;
