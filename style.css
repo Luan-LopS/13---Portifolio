@@ -1,6 +1,8 @@
 
 /*---------------inicio configuração geral------------*/
-
+html{
+    overflow-x: hidden;
+}
 
 body {
     margin: 0;
@@ -111,8 +113,8 @@ h1 {
 }
 
 #imag {
-    height: 40vh;
-    width: 22vw;
+    height: 15rem;
+    width: 15rem;
     background-image: url(/imagens/galaxia.jpg);
     background-size: cover;
     background-position-x: center;
@@ -266,8 +268,6 @@ h1 {
     height: 60%;
 }
 
-
-
 .img-item {
     background-image: url(/imagens/cod-python.jpg);
     background-size: cover;
@@ -418,7 +418,6 @@ h1 {
 }
 
 .contact-cards{
-    padding-top: 1.5em;
     width: 15em;
     height: 12em;
     margin: 1em;
