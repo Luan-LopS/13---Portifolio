@@ -203,7 +203,6 @@ h1 {
 }
 
 .conteiner-project li:hover{
-    background-color: #1F5461;
     border: .2em solid black;
     cursor: pointer;
     border-radius: 5%;
