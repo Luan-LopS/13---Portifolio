@@ -1,6 +1,7 @@
-@media screen and (max-width: 1280px){ 
+@media screen and (max-width: 1024px){ 
+  
     #header-apre {
-        margin-top: 50px;
+        margin-top: 30px;
         height: 80vh;
         display: flex;
         flex-direction: column;
@@ -34,47 +35,27 @@
 }
 
 
-@media screen and (max-height: 700px){ 
-    html{
-        overflow-x: hidden;
-    }
-   
-    .content-header {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        background-color: #222222;
-    }
-
-    #nave li {
-        margin: 0.6em;
-    }
-
-    #header-apre {
-        margin-top: 60px;
-    }
-
-    .card {
-        height: 100vh;
-        width: 97%;
-        text-align: center;
-        box-sizing: border-box;
-    }
-
-    .grid-container {
-        grid-template-columns: 35% 35% 35%;
-        grid-template-rows: 100%;
-        grid-gap: .2em;    
-    }
-
-}
 
 @media screen and (max-width: 950px){ 
  
+    #header-apre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #apres h2 {
+        text-align: center;
+    }
+    
+    #apres p{
+        text-align: center;
+    }
+    
+
     .card {
-        height: 70vh;
+        height: 55vh;
         width: 97%;
         text-align: center;
         box-sizing: border-box;
@@ -86,17 +67,16 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        background-color: #222222;
     }
     #nave {
-        width: 40%;
+        width: 60%;
         font-weight: 600;
         font-size: 1.2em;
         text-transform: uppercase;
     }
     
     #nave ul {
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         list-style: none;
@@ -111,14 +91,14 @@
         font-weight: 1000;
     }
     
-    #nave li {
-        margin: 0.6em;
-    }
-
     .grid-container {
         grid-template-columns: 34% 34% 34%;
-        grid-template-rows: 75%;
+        grid-template-rows: 85%;
         grid-gap: .2em;    
+    }
+
+    .img-item {
+        height: 40%;
     }
 
     .conteiner-carrossel{
@@ -178,15 +158,308 @@
         justify-content: space-around;
         width: 80%;
         height: 12em;
+        align-items: center;
     }
     
     .contact-cards{
-        width: 8em;
-        height: 8em;
+        width: 12em;
+        height: 12em;
         margin: 1em;
         border-radius: 5%;
         font-size: 0.8em;
     }
     
+
+}
+
+
+
+@media screen and (max-height: 700px){ 
+    html{
+        overflow-x: hidden;
+    }
+   
+    .content-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #222222;
+    }
+
+    #nave ul{
+        position: relative;
+        right: 5em;
+    }
+
+    #nave li {
+        margin: 0.6em;
+    }
+
+    #header-apre {
+        margin-top: 60px;
+    }
+
+    .card {
+        height: 100vh;
+        width: 97%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .grid-container {
+        grid-template-columns: 35% 35% 35%;
+        grid-template-rows: 100%;
+        grid-gap: .2em;    
+    }
+
+    .contact-card{
+        display: flex;
+        width: 80%;
+        height: 70%;
+        align-items: center;
+    }
+    
+}
+
+
+
+
+@media screen and (max-height: 600px) and (max-width: 600px){ 
+    html{
+        overflow-x: hidden;
+    }
+
+    body{
+        font-size: 0.8em;
+    }
+
+    #foto {
+    height: 15rem;
+    width: 15rem;
+    }
+
+    .card {
+        height: 100vh;
+        width: 70%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .grid-container {
+        width: 90%;
+        height: 130%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-gap: .2em;    
+    }
+
+}
+
+@media screen and (max-width: 570px){ 
+    body{font-size: 0.8em;}
+
+
+    #nave{
+       display: none;
+    }
+
+    #apres h2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #apres p{
+        width: 90%;
+        text-align: justify;
+        margin-left: 1.5em;
+    
+    }
+
+    .card {
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    #nav-project{
+        height: 26em;
+        box-sizing: border-box;
+        font-size: 0.7em;
+    }
+
+
+    #projectHtml{
+        margin-top: 1em;
+    }
+    
+    #projectCss{
+        margin-top: 1em;
+    }
+    
+    #projectJavascript{
+        margin-top: 1em;
+    }
+    
+    #projectPython{
+        margin-top: 1em;
+    }
+    
+    #projectJava{
+       margin-top: 1em;
+    }
+    
+
+    .conteiner-project ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-container { 
+        width: 90%;
+        height: 130%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-gap: .2em;        
+    }
+
+    .fa-brands{
+        font-size: 8em;
+    }
+
+    .fa-brands:hover {
+        font-size: 9rem;
+    }
+
+    
+    .conteiner-carrossel{
+        margin-top: 3em;
+        width: 30em;
+        height: 20em;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    
+    .content-carrossel{
+        width: 100em;
+        height: 15em;
+        display: flex;
+        align-items: center;
+    }
+    
+    .slide{
+        width: 12em;
+        height: 100%;
+        position: relative;
+        box-sizing: border-box;
+        animation: slide 30s infinite linear;
+    }
+    
+    @keyframes slide{
+        15%{left:0em;}
+        30%{left: -30em;}
+        45%{left: -30em;}
+        65%{left: -60em;}
+        75%{left: -60em;}
+        85%{left: -70em;}
+        99%{left: -70em;}
+        100%{left: 0em;}
+    }
+    
+}
+
+
+@media screen and (max-width: 480px){ 
+    
+    body{
+        font-size: 0.7em;
+    }
+
+    #nave{
+       display: none;
+    }
+
+    #apres h2 {
+        width: 70%;
+        text-align: center;
+        margin-left: 20%;
+    }
+    
+    #apres p{
+        width: 70%;
+        text-align: justify;
+        margin-left: 20%; 
+    }
+
+    .grid-container { 
+        width: 90%;
+        height: 140%;
+        grid-template-columns: 80%;
+        grid-template-rows: 33% 33% 33%;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .card {
+        height: 100vh;
+        width: 80%;
+        text-align: center;
+        box-sizing: border-box;
+        margin-left: 5%;
+    }
+    
+    #habili {
+        width: 90%;
+    }
+
+    .contact-card{
+        width: 70%;
+       height: 40%;
+       display: flex;
+       flex-direction: column;
+    }
+
+    .contact-cards i {
+        font-size: 4em;
+    }
+
+    .conteiner-carrossel{
+        margin-top: 3em;
+        width:27em;
+        height: 20em;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+
+    .content-carrossel{
+        margin-left: 0.8em;
+        font-size: 0.8em;
+        width: 105em;
+        height: 15em;
+        display: flex;
+        align-items: center;
+    }
+    
+    .slide{
+        width: 14.6em;
+        height: 100%;
+        position: relative;
+        box-sizing: border-box;
+        animation: slide 30s infinite linear;
+    }
+    
+    @keyframes slide{
+        15%{left:0em;}
+        30%{left: -34em;}
+        45%{left: -34em;}
+        65%{left: -68em;}
+        75%{left: -68em;}
+        85%{left: -74em;}
+        99%{left: -74em;}
+        100%{left: 0em;}
+    }
 
 }
