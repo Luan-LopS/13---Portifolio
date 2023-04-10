@@ -174,6 +174,9 @@
         font-size: 0.8em;
     }
     
+    .fa-brands:hover {
+        font-size: 10rem;
+    }
 
 }
 
@@ -235,6 +238,10 @@
         font-size: 3em;
     }
     
+
+    .fa-brands:hover {
+        font-size: 10rem;
+    }
 }
 
 
@@ -502,6 +509,10 @@
         85%{left: -74em;}
         99%{left: -74em;}
         100%{left: 0em;}
+    }
+
+    .fa-brands:hover {
+        font-size: 8rem;
     }
 
 }
