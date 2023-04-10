@@ -164,11 +164,11 @@ h1 {
 
 
 #foto {
+    height: 15rem;
+    width: 15rem;
     background-image: url(/imagens/1.png);
     background-position: center;
     background-size: 200%;
-    height: 15rem;
-    width: 15rem;
     border-radius: 100%;
     border: #333333 0.8rem solid;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
@@ -203,6 +203,7 @@ h1 {
     width: 8.5em;
     height: 4.5em;
     border-radius: 5%;
+    word-spacing: 10em;
 
 }
 
@@ -301,7 +302,6 @@ h1 {
 
 /*--------------inicio Conhecimentos Tecnicos (habilidades)-----------------*/
 #habili {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;

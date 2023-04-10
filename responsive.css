@@ -17,7 +17,13 @@
         text-align: center;
     }
     
-
+    #nave {
+        width: 60%;
+        font-weight: 600;
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+    
     .card {
         height: 70vh;
         width: 97%;
@@ -68,12 +74,6 @@
         align-items: center;
         justify-content: space-between;
     }
-    #nave {
-        width: 60%;
-        font-weight: 600;
-        font-size: 1.2em;
-        text-transform: uppercase;
-    }
     
     #nave ul {
         width: 100%;
@@ -93,7 +93,7 @@
     
     .grid-container {
         grid-template-columns: 34% 34% 34%;
-        grid-template-rows: 85%;
+        grid-template-rows: 100%;
         grid-gap: .2em;    
     }
 
@@ -153,6 +153,11 @@
 }
 
 @media screen and (max-width: 768px){ 
+    #nave {
+        font-size: 1em;
+    }
+    
+
     .contact-card{
         display: flex;
         justify-content: space-around;
@@ -214,19 +219,58 @@
         grid-gap: .2em;    
     }
 
-    .contact-card{
+    #contact{
+        height: 100vh;
         display: flex;
-        width: 80%;
-        height: 70%;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+    }
+      
+    .contact-cards{
+        height: 10vh;    
+    }
+    
+    .contact-cards i {
+        font-size: 3em;
     }
     
 }
 
 
+@media screen and (max-height: 600px){ 
+    html{
+        overflow-x: hidden;
+    }
+
+    body{
+        font-size: 0.8em;
+    }
+
+    #foto {
+    height: 15rem;
+    width: 15rem;
+    }
+
+    .card {
+        height: 100vh;
+        width: 70%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .grid-container {
+        width: 90%;
+        height: 130%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-gap: .2em;    
+    }
+
+}
 
 
-@media screen and (max-height: 600px) and (max-width: 600px){ 
+@media screen and (max-width: 600px){ 
     html{
         overflow-x: hidden;
     }
@@ -262,7 +306,7 @@
 
 
     #nave{
-       display: none;
+       font-size: 1em;
     }
 
     #apres h2 {
@@ -318,7 +362,7 @@
     }
 
     .grid-container { 
-        width: 90%;
+        width: 100%;
         height: 130%;
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
@@ -378,24 +422,26 @@
     }
 
     #nave{
-       display: none;
+        width: 70%;
+        font-size: 1em;
     }
 
-    #apres h2 {
-        width: 70%;
-        text-align: center;
-        margin-left: 20%;
+     
+    #imag {
+    height: 10rem;
+    width: 10rem;
     }
-    
-    #apres p{
-        width: 70%;
-        text-align: justify;
-        margin-left: 20%; 
+     
+    #foto {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    #sobre p{
+        width: 100%;
     }
 
     .grid-container { 
-        width: 90%;
-        height: 140%;
         grid-template-columns: 80%;
         grid-template-rows: 33% 33% 33%;
         justify-content: center;
@@ -407,15 +453,11 @@
         width: 80%;
         text-align: center;
         box-sizing: border-box;
-        margin-left: 5%;
-    }
-    
-    #habili {
-        width: 90%;
+        margin-left: 10%;
     }
 
     .contact-card{
-        width: 70%;
+       width: 70%;
        height: 40%;
        display: flex;
        flex-direction: column;
