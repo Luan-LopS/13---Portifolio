@@ -34,10 +34,6 @@
     .fa-brands{
         font-size: 10em;
     }
-
-    .content-carrossel .fa-brands:hover {
-        font-size: 12rem;
-    }
 }
 
 
@@ -173,10 +169,6 @@
         border-radius: 5%;
         font-size: 0.8em;
     }
-    
-    .fa-brands:hover {
-        font-size: 10rem;
-    }
 
 }
 
@@ -238,10 +230,6 @@
         font-size: 3em;
     }
     
-
-    .fa-brands:hover {
-        font-size: 10rem;
-    }
 }
 
 
@@ -379,11 +367,6 @@
     .fa-brands{
         font-size: 8em;
     }
-
-    .fa-brands:hover {
-        font-size: 9rem;
-    }
-
     
     .conteiner-carrossel{
         margin-top: 3em;
@@ -509,10 +492,6 @@
         85%{left: -74em;}
         99%{left: -74em;}
         100%{left: 0em;}
-    }
-
-    .fa-brands:hover {
-        font-size: 8rem;
     }
 
 }
